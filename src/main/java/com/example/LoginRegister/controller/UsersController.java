@@ -30,6 +30,7 @@ public class UsersController {
         return "login_page";
     }
 
+
     @PostMapping("/register")
     public String register(@ModelAttribute UsersModel usersModel){
         System.out.println("register request: " + usersModel);

@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #064663;
+}
+
+h1{
+    color: red;
+    padding-top: 300px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-family: Andale Mono, monospace;
+}
+
+
+.input{
+    width: 300px;
+    padding-top: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.input a{
+    color: aqua;
+    text-decoration: none;
+    font-family: Andale Mono, monospace;
+    font-size: 20px;
+    transition: ease-out 0.3s;
+}
+
+.input a:hover{
+    color: #2085b4
+}
+
+
+@media only screen and (min-width: 760px){
+    h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .input{
+        width: 700px;
+    }
+    .input a{
+        font-size: 30px;
+    }
+}

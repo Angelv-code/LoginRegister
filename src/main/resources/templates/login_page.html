@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
   <title>Login</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="form">
-  <form method="post" action="/login" th:object="${loginRequest}">
-    <h2>Sign In</h2>
-    <div class="input-box">
-      <i class="fa fa-user" aria-hidden="true"></i>
-      <input type="text" name="login" placeholder="Login" required>
-    </div>
-    <div class="input-box">
-      <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-      <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-    </div>
-    <div class="input-box">
-      <input type="submit" name="sign-in" value="Login">
-    </div>
-    <a href="/register">Navigate to register</a>
-  </form>
+<div class="container">
+  <div class="form">
+    <form method="post" action="/login" th:object="${loginRequest}">
+      <h2>Sign In</h2>
+      <div class="input-box">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" name="login" placeholder="Enter user name..." required>
+      </div>
+      <div class="input-box">
+        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+        <input type="password" name="password" placeholder="Enter password..." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      </div>
+      <div class="input-box-2">
+        <input class = "inp-1" type="submit" name="sign-in" value="Login">
+      </div>
+      <a href="/register" class="inp-2">Create account</a>
+      <br>
+      <a href="/" class="inp-2">Return home</a>
+    </form>
+  </div>
 </div>
 </body>
 </html>

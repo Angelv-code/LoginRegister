@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: #ebf6f7;
+}
+
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 5px 5px 5px;
+    background-color:  #041C32;
+}
+
+li a{
+    text-decoration: none;
+    float: right;
+    padding: 20px 5px 5px;
+    padding-right: 10px;
+    font-size: 15px;
+    display: block;
+    border: 2px black;
+    color: white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+li a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+li .img-1{
+    width:50px;
+    height: 50px;
+    float: left;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.welcome{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 20px 40px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-family: Courier New, monospace;
+    background: #064663;
+}
+.wrapper{
+    color:black;
+    display: block;
+    width:340px;
+}
+.theme{
+    background-image: url("/pictures/background3.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 250px;
+    position: relative;
+    isolation: isolate;
+}
+
+.theme::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: #04293A;
+    opacity: .5;
+}
+
+.theme h1{
+    font-size: 20px;
+    padding: 10px 0px 10px;
+    font-family: Andale Mono, monospace;
+}
+
+.btn-1{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    outline: none;
+    border: 3px solid #42FBF2;
+    z-index: 1;
+    background-color: Transparent;
+    text-decoration: none;
+}
+.btn-1:hover{
+    background-color: aqua;
+}
+.log{
+    color: white;
+    text-decoration: none;
+    font-family: Andale Mono, monospace;
+}
+
+.btn-2{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    outline: none;
+    border: 3px solid #42FBF2;
+    z-index: 1;
+    background-color: Transparent;
+}
+
+.btn-2:hover{
+    background-color: aqua;
+}
+
+.reg{
+    color: white;
+    text-decoration: none;
+    font-family: Andale Mono, monospace;
+    font: bold;
+}
+
+
+.title{
+    color:white;
+    text-align: center;
+    background-color: #04293A;
+    padding-top: 15px;
+    font-size: 21px;
+    padding-bottom: 20px;
+    font-family: Courier New, monospace;
+}
+
+.intro{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-family: Courier New, monospace;
+}
+
+.wrapper-2{
+    color: black;
+    width: 100%;
+}
+.title-2{
+    text-align: center;
+    background-color: #04293A;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 28px;
+    font-family: Courier New, monospace;
+    color: white;
+}
+.ending{
+    padding-top: 10px;
+    padding-left: 17px;
+    font-size: 17px;
+    line-height: 50px;
+    font-family: Courier New, monospace;
+}
+
+@media only screen and (min-width: 760px){
+    li a{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    li .img-1{
+        width:80px;
+        height: 80px;
+    }
+
+    .theme{
+        min-height: 400px;
+    }
+
+    .btn-1{
+        width:150px;
+        height: 50px;
+    }
+
+    .log{
+        font-size: 20px;
+    }
+
+    .btn-2{
+        width:150px;
+        height: 50px;
+    }
+
+    .reg{
+        font-size: 20px;
+    }
+
+    .welcome{
+        font-size: 40px;
+    }
+    .wrapper{
+        display: block;
+        margin: 0 auto;
+        width: 700px;
+    }
+    .intro{
+        font-size: 30px;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .title-2{
+        font-size: 40px;
+    }
+    .ending{
+        font-size: 30px;
+        text-align: center;
+    }
+    @media only screen and (min-width: 1300px){
+
+        .wrapper{
+            width: 1200px;
+        }
+    }
+    @media only screen and (min-width: 1500px){
+
+        li a{
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        li .img-1{
+            width:100px;
+            height: 100px;
+        }
+
+        .theme{
+            min-height: 600px;
+        }
+
+        .theme h1{
+            font-size: 30px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .btn-1{
+            width:200px;
+            height: 70px;
+        }
+
+        .log{
+            font-size: 30px;
+        }
+
+        .btn-2{
+            width:200px;
+            height: 70px;
+        }
+
+        .reg{
+            font-size: 30px;
+        }
+
+        .wrapper{
+            width: 1500px;
+        }
+    }
+
+}

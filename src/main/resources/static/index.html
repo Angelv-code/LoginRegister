@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>UserLoginProject</title>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+  <link rel = "stylesheet" href = "css/index.css">
 </head>
 <body>
-<h1>Welcome to application</h1>
-<a href="/register">Navigate to registration</a>
-<a href="/login">Navigate to logi</a>
+
+<div class="container">
+  <ul>
+    <li><img src="pictures/logo3.png" alt="Data Project Logo" class="img-1"></li>
+    <li><a href="index.html">ABOUT</a></li>
+    <li><a href="/register">REGISTER</a></li>
+    <li><a href="/login">LOGIN</a></li>
+  </ul>
+</div>
+
+<div class="theme">
+  <button class="btn-1"><a href="/login" class = "log">LOGIN</a></button>
+  <h1>OR</h1>
+  <button class="btn-2"><a href="/register" class = "reg">REGISTER</a></button>
+</div>
+
+<h1 class = "welcome">Welcome To My Project!</h1>
+
+<h1 class="title">| Purpose of Development? |</h1>
+
+<div class="wrapper">
+  <h2 class="intro">
+    &nbsp;&nbsp;The purpose of this Project was to experiment and learn
+    how to launch a web application that uses java and other plugins
+    into a live server. I learned how to format a database using
+    PostgreSQL in Java using Spring Boot plugins to have users interact
+    with and send information to be collected and used.
+    <br>
+    <p> &nbsp;</p>
+    &nbsp;&nbsp;The information that the user sends is a username, email address,
+    and a password. After the user registers into my database through
+    a register form, they are sent to apply that information into a login
+    form. Once that information is applied, Data Project will then decide
+    if the username and password is valid information in the database.
+    If the information is not null then user will be sent to a welcome page.
+    If the information is null then user will be redirected to an error page.
+  </h2>
+</div>
+
+<div class="wrapper-2">
+  <h1 class="title-2">| Resources |</h1>
+  <h2 class="ending">
+    IDE = IntelliJ <br> Database System = PostgreSQL <br> Framework = Spring Boot <br> Servers = GitHub, Heroku
+  </h2>
+</div>
+
+
 </body>
 </html>
